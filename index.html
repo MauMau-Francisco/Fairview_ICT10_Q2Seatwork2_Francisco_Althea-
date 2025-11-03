@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Simple Average Finder</title>
+<head>
+    <style>  
+        body {
+            background-color: #f9adad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f6ebce;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #C2E2FA;  
+            text-align: center;        
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #a8e1f9;
+            cursor: pointer;
+        }
+        h1 {
+            background-color: #fdb7b7;
+            padding: 10px;
+            border-radius: 10px;
+            color: #a993d9;
+        }
+
+        h4 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: large;
+            color: #9982cb;
+        }
+
+        label {
+            background-color: #f8b2b2;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="container">
+        <h1> Student Grade Calculator</h1> <!--heading-->
+
+        <br>
+
+        <h4>Student Info:</h4>  <!--subtitle-->
+
+        <br><br>  <!--input fields and input scores-->
+    
+        <!--placeholders-->
+        <label for="first_name" class="label">First name:</label>
+        <input type="text" id="first_name" placeholder="Enter your first name">
+
+        <label for="last_name" class="label">Last name:</label>
+        <input type="text" id="last_name" placeholder="Enter your last name">
+
+        <br>
+        <h4>Summary:</h4>
+        <label  for="math" class="label">math:</label>
+        <input class="form-label" type="number" id="math" placeholder="Enter score" required>
+
+        <label for="science" class="label">science:</label>
+        <input class="form-label" type="number" id="science" placeholder="Enter score" required>
+
+        <label for="english" class="label">english:</label>
+        <input class="form-label" type="number" id="english" placeholder="Enter score" required>
+
+        <label for="filipino" class="label">filipino:</label>
+        <input class="form-label" type="number" id="filipino" placeholder="Enter score" required>
+    
+        <label for="pe" class="label">pe:</label>
+        <input class="form-label" type="number" id="pe" placeholder="Enter score" required>
+
+        <label for="ict" class="label">ict:</label>
+        <input class="form-label" type="number" id="ict" placeholder="Enter score" required>
+
+        <br><br> 
+
+        <button py-click="general_average">Calculate GWA</button> <!--calculation button-->
+
+        <p id="student_info_text"></p>
+        <p id="summary"></p>
+        <p id="output"></p>
+        <!--id for python to identify the calculation and to show results-->
+
+        </div>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
